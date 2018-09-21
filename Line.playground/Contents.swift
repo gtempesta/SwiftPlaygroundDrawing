@@ -20,7 +20,7 @@ public class SimpleLine: UIView  {
     public override func draw(_ rect: CGRect) {
         guard let context = UIGraphicsGetCurrentContext() else { return }
         context.setLineWidth(4.0)
-        context.setStrokeColor(UIColor.darkGray.cgColor)
+        context.setStrokeColor(UIColor.black.cgColor)
         context.move(to: self.startingPoint)
         context.addLine(to: self.endingPoint)
         context.strokePath()
